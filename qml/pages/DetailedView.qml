@@ -25,7 +25,7 @@ Page {
                 rightMargin: Theme.horizontalPageMargin
             }
 
-            DetailItem { id: title; label: qsTr("title"); value: item.title }
+            PageHeader { title: item.title; wrapMode: Text.WordWrap }
             DetailItem { label: qsTr("channel"); value: item.channel }
             DetailItem { label: qsTr("duration"); value: Datehelper.seconds_to_DHMS(item.duration) }
             DetailItem { label: qsTr("timestamp"); value: Datehelper.date_from_epoch(item.timestamp) }

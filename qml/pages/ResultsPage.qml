@@ -59,15 +59,23 @@ Page {
                 }
             }
         }
+        PageHeader {
+            id: header
+            title: qsTr("Results")
+            description: qsTr("%1 items found").arg(listView.count)
+            clip: true
+        }
       SilicaListView {
         id: listView
-        height: parent.height
+        height: parent.height - header.height
         width: parent.width
+        anchors.top: header.bottom
         anchors.left: parent.left
         anchors.right: parent.right
 
         model: currentAPI
 
+        clip: true
         delegate: ListItem {
             contentHeight: Theme.itemSizeLarge
             contentWidth: parent.width

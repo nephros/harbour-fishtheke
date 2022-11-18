@@ -55,7 +55,7 @@
     <name>DetailedView</name>
     <message>
         <source>title</source>
-        <translation>Title</translation>
+        <translation type="vanished">Title</translation>
     </message>
     <message>
         <source>channel</source>
@@ -68,6 +68,10 @@
     <message>
         <source>timestamp</source>
         <translation>Aired</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation type="vanished">Details</translation>
     </message>
 </context>
 <context>
@@ -102,6 +106,14 @@
     <message>
         <source>Load more</source>
         <translation>Load more</translation>
+    </message>
+    <message>
+        <source>Results</source>
+        <translation>Results</translation>
+    </message>
+    <message>
+        <source>%1 items found</source>
+        <translation>%1 items found</translation>
     </message>
 </context>
 <context>

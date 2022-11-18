@@ -1,7 +1,7 @@
 function date_from_epoch(timestamp) {
     var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
     d.setUTCSeconds(timestamp);
-    return Format.formatDate(d, Formatter.TimepointSectionRelative)
+    return Format.formatDate(d, Formatter.DateMedium) + " " + Format.formatDate(d, Formatter.TimeValue)
 }
 
 function seconds_to_DHMS(duration) {

@@ -28,7 +28,7 @@ Page {
             PageHeader { title: item.title; wrapMode: Text.WordWrap }
             DetailItem { label: qsTr("channel"); value: item.channel }
             DetailItem { label: qsTr("duration"); value: Datehelper.seconds_to_DHMS(item.duration) }
-            DetailItem { label: qsTr("timestamp"); value: Datehelper.date_from_epoch(item.timestamp) }
+            DetailItem { label: qsTr("timestamp"); value: Format.formatDate(new Date(item.timestamp*1000), Formatter.DateMedium) + " " + Format.formatDate(new Date(item.timestamp*1000), Formatter.TimeValue) }
             Text {
                 color: Theme.primaryColor
                 width: parent.width

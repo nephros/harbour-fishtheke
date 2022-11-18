@@ -102,7 +102,7 @@ Page {
                         wrapMode: Text.Wrap
                         horizontalAlignment: Text.AlignRight
                         rightPadding: Theme.paddingMedium
-                        text: Datehelper.date_from_epoch(display.timestamp)
+                        text: Format.formatDate(new Date(display.timestamp*1000), Formatter.DateMedium)
                     }
                 }
 
